@@ -1,14 +1,13 @@
-import "./App.css";
-import SortableList from "./components/SortableList";
-import DragDropFiles from "./components/DragDropFiles";
+import React from 'react';
+import './App.css';
+import Quizforge from './Quickforge';
 
-const App = () => {
-    return (
-        <div className="container">
-            <SortableList />
-            <DragDropFiles />
-        </div>
-    )
-};
+function App() {
+  return (
+    <div className="App">
+      <Quizforge />
+    </div>
+  );
+}
 
 export default App;

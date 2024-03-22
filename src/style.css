@@ -1,0 +1,78 @@
+.quizforge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .drag-drop-box {
+    width: 400px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .drag-drop-box p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container input[type="number"] {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  .button-container select {
+    width: 120px;
+    margin-right: 20px;
+  }
+  
+  .button-container input[type="text"] {
+    flex-grow: 1;
+  }
+  
+  .generated-questions {
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .generated-questions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .generated-questions li {
+    padding: 5px 0;
+  }
+  
+  p.description {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  body{
+    background: linear-gradient(#e66465, #9198e5);
+    height: 1200px;
+    width: 100% ;
+  }
