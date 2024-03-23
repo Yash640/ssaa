@@ -28,7 +28,7 @@ function Quizforge() {
   const handleFileDrop = (files) => {
     const pdfFile = files[0];
     if (pdfFile.type !== 'application/pdf') {
-      alert('Only PDF files are allowed!');
+      alert('Only PDF and txt files are allowed!');
       return;
     }
     setPdfFile(pdfFile);
@@ -45,6 +45,15 @@ function Quizforge() {
   };
 
   const handleSubmit = async () => {
+    var data = new FormData()
+    data.append('file',pdfFile)
+    let Response = fetch ("http://127.0.0.1:8000/pdf/" , {
+      method : 'POST' ,
+      headers:{
+        'Content-Type' : 'application/json',  
+      }, body: data 
+          
+    })
     const questions = [];
     for (let i = 0; i < numQuestions; i++) {
       questions.push(`Question ${i + 1}`);

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Quizforge from './Quickforge';
+import Quizforge from './Quizforge';
 
 function App() {
   return (
